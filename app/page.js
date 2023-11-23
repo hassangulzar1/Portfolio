@@ -1,7 +1,16 @@
+"use client";
 import Image from "next/image";
 import heroImg from "../assets/homeImg.png";
 import classes from "./home.module.css";
+import { Cursor, useTypewriter } from "react-simple-typewriter";
 export default function Home() {
+  const [text] = useTypewriter({
+    words: ["MERN Stack Developer", "Problem Solver", "Mobile Developer"],
+    loop: {},
+    typeSpeed: 120,
+    deleteSpeed: 20,
+  });
+
   return (
     <div className={`container mx-auto ${classes.hero}`}>
       <div className=" flex justify-between w-full h-full flex-col sm:flex-row my-auto">
@@ -9,6 +18,13 @@ export default function Home() {
           <h6 className={classes.welcome}>Hi There!</h6>
           <h1 className={classes.im}>
             I'm <span className={classes.name}>Hassan Gulzar</span>
+          </h1>
+
+          <h1 className={classes.autoTyping}>
+            A <span style={{ color: "#130f49" }}>{text}</span>
+            <span>
+              <Cursor />
+            </span>
           </h1>
         </div>
 

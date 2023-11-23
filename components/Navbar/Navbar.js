@@ -7,7 +7,7 @@ const Navbar = () => {
       <div className={classes.nav}>
         <input type="checkbox" className={classes["nav-check"]} />
         <div className={classes["nav-header"]}>
-          <div className={classes["nav-title"]}>Hassan</div>
+          <div className={classes["nav-title"]}>&#128075;</div>
         </div>
         <div className={classes["nav-btn"]}>
           <label for="nav-check">

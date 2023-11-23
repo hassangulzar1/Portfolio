@@ -2,7 +2,7 @@
   background-color: #34a1cd;
   position: sticky;
   top: 0;
-  border-bottom: 2px solid black;
+  border-bottom: 1px solid black;
 }
 .nav {
   height: 4.3rem;
@@ -16,9 +16,9 @@
 
 .nav > .nav-header > .nav-title {
   display: inline-block;
-  font-size: 22px;
+  font-size: 2rem;
   color: #fff;
-  padding-top: 20px;
+  margin-top: 0.7rem;
   padding-left: 50px;
 }
 

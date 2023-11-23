@@ -1,11 +1,7 @@
 import Navbar from "@/components/Navbar/Navbar";
 import "./globals.css";
-import { Inter, Poppins, Karla } from "next/font/google";
+import { Poppins, Karla } from "next/font/google";
 
-export const inter = Inter({
-  subsets: ["latin"],
-  display: "swap",
-});
 export const karla = Karla({
   weight: ["700"],
   subsets: ["latin"],
@@ -17,6 +13,7 @@ export const poppins = Poppins({
   weight: ["100", "200", "300", "500", "700"],
   subsets: ["latin"],
   display: "swap",
+  variable: "--font-poppins",
 });
 
 export const metadata = {
@@ -27,8 +24,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${karla.variable}`}>
-        <Navbar>{children}</Navbar>
+      <body className={`${karla.variable} ${poppins.variable}`}>
+        <Navbar />
+        {children}
       </body>
     </html>
   );

@@ -1,0 +1,20 @@
+.hero {
+  height: 92vh;
+}
+.welcome {
+  color: #a7b6c7;
+  font-family: var(--font-poppins);
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.im {
+  font-family: var(--font-poppins);
+  color: #130f49;
+  font-weight: 700;
+  font-size: 4rem;
+  display: inline;
+  line-height: 60px;
+}
+.name {
+  color: #34a1cd;
+}

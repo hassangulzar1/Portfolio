@@ -1,6 +1,5 @@
 import React from "react";
 import classes from "./Navbar.module.css";
-import { karla } from "@/fonts/font";
 const Navbar = () => {
   return (
     <nav className={classes.navBackground}>

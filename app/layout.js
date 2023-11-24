@@ -3,7 +3,7 @@ import "./globals.css";
 import { Poppins, Karla } from "next/font/google";
 
 export const karla = Karla({
-  weight: ["700"],
+  weight: ["700", "400"],
   subsets: ["latin"],
   display: "swap",
   variable: "--font-karla",

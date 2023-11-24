@@ -1,0 +1,43 @@
+/* CSS */
+.btn {
+  appearance: none;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: var(--font-karla);
+  font-size: 1.3rem;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  min-width: 0;
+  line-height: 24px;
+  outline: none;
+  padding: 1.3rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+  will-change: transform;
+}
+
+.btn:disabled {
+  pointer-events: none;
+}
+
+.darkBlueHover:hover {
+  box-shadow: rgb(19, 15, 73, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+.lightBlueHover:hover {
+  box-shadow: rgb(52, 161, 205, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+.btn:active {
+  box-shadow: none;
+  transform: translateY(0);
+}

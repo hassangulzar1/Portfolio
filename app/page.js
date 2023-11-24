@@ -4,9 +4,16 @@ import heroImg from "../assets/homeImg.png";
 import classes from "./home.module.css";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import Button from "@/components/button/Button";
+import SocialMedia from "@/components/socialmedia/SocialMedia";
+
 export default function Home() {
   const [text] = useTypewriter({
-    words: ["MERN Stack Developer", "Problem Solver", "Mobile Developer"],
+    words: [
+      "MERN Stack Developer",
+      "Problem Solver",
+      "Mobile Developer",
+      "Freelancer",
+    ],
     loop: {},
     typeSpeed: 120,
     deleteSpeed: 20,
@@ -32,7 +39,7 @@ export default function Home() {
             I help you increase conversion and performance in every possible
             way.
           </p>
-          <div className="flex gap-5 my-5">
+          <div className="flex gap-5 my-5 z-0">
             <Button background="#130F49" hover="darkBlueHover">
               See my work
             </Button>
@@ -40,8 +47,10 @@ export default function Home() {
               Start A project
             </Button>
           </div>
+          <div className=" my-10">
+            <SocialMedia />
+          </div>
         </div>
-
         <div className="sm:w-1/2 my-auto inline-block">
           <Image
             className="frame mx-auto object-cover object-center w-11/12 sm:w-full md:w-11/12 lg:w-3/4 xl:w-4/6 2xl:w-9/12"

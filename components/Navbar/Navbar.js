@@ -2,7 +2,7 @@ import React from "react";
 import classes from "./Navbar.module.css";
 const Navbar = () => {
   return (
-    <nav className={classes.navBackground}>
+    <nav className={`${classes.navBackground} z-10`}>
       <div className={classes.nav}>
         <input type="checkbox" className={classes["nav-check"]} />
         <div className={classes["nav-header"]}>

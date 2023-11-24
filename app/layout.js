@@ -10,7 +10,7 @@ export const karla = Karla({
 });
 
 export const poppins = Poppins({
-  weight: ["100", "200", "300", "500", "700"],
+  weight: ["100", "200", "300", "400", "500", "700"],
   subsets: ["latin"],
   display: "swap",
   variable: "--font-poppins",

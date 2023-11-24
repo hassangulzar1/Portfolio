@@ -13,6 +13,7 @@ export default function Home() {
       "Problem Solver",
       "Mobile Developer",
       "Freelancer",
+      "Tech enthusiast",
     ],
     loop: {},
     typeSpeed: 120,

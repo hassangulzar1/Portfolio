@@ -1,0 +1,27 @@
+.bg {
+  background-image: url("../../assets/bg.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg h1 {
+  text-align: center;
+  margin-top: 3.4rem;
+  font-size: 1.5rem;
+  color: #34a1cd;
+  font-family: var(--font-karla);
+  text-transform: uppercase;
+}
+.bg p {
+  word-spacing: 2px;
+  color: #130f49;
+  font-weight: 400;
+  font-family: var(--font-poppins);
+  text-align: center;
+  font-size: 2.5rem;
+  line-height: 52px;
+}

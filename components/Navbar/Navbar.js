@@ -1,5 +1,6 @@
 import React from "react";
 import classes from "./Navbar.module.css";
+import Link from "next/link";
 const Navbar = () => {
   return (
     <nav className={`${classes.navBackground} z-10`}>
@@ -17,21 +18,15 @@ const Navbar = () => {
         </div>
 
         <div className={classes["nav-links"]}>
-          <a target="_blank" className={` p-6`}>
+          <Link href="/" className={` p-6`}>
             HOME
-          </a>
-          <a target="_blank" className={` p-6`}>
+          </Link>
+          <Link href="/about" className={` p-6`}>
             ABOUT
-          </a>
-          <a target="_blank" className={` p-6`}>
-            SERVICES
-          </a>
-          <a target="_blank" className={` p-6`}>
-            PORTFOLIO
-          </a>
-          <a target="_blank" className={` p-6`}>
-            CONTACT
-          </a>
+          </Link>
+          <a className={` p-6`}>SERVICES</a>
+          <a className={` p-6`}>PORTFOLIO</a>
+          <a className={` p-6`}>CONTACT</a>
         </div>
       </div>
     </nav>

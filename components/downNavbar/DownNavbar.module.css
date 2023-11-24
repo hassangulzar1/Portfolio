@@ -1,0 +1,15 @@
+.start {
+  background-color: #34a1cd;
+}
+.bottomNavbar {
+  height: 30vh;
+  display: flex;
+  align-items: center;
+}
+
+.bottomNavbar h1 {
+  font-family: var(--font-poppins);
+  text-shadow: 1px 1px 1px #ffff;
+  color: #ffff;
+  font-size: 4.4rem;
+}

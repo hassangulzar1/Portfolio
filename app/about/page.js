@@ -2,6 +2,7 @@ import React from "react";
 import DownNavbar from "@/components/downNavbar/DownNavbar";
 import classes from "./about.module.css";
 import Button from "@/components/button/Button";
+import ProgressBars from "@/components/progressbars/ProgressBars";
 const page = () => {
   return (
     <>
@@ -19,7 +20,10 @@ const page = () => {
             </Button>
           </div>
           <hr style={{ margin: "0px 100px", color: "#130f49" }} />
-          <h1>Skills</h1>
+          <div className="mx-5">
+            <ProgressBars />
+            <ProgressBars />
+          </div>
         </div>
       </div>
     </>

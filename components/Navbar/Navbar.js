@@ -1,7 +1,11 @@
+"use client";
 import React from "react";
 import classes from "./Navbar.module.css";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+
 const Navbar = () => {
+  const pathname = usePathname();
   return (
     <nav className={`${classes.navBackground} z-10`}>
       <div className={classes.nav}>
@@ -18,15 +22,29 @@ const Navbar = () => {
         </div>
 
         <div className={classes["nav-links"]}>
-          <Link href="/" className={` p-6`}>
+          <Link
+            href="/"
+            className={`${pathname === "/" ? classes["active"] : ""}`}
+            style={{ padding: "20px" }}
+          >
             HOME
           </Link>
-          <Link href="/about" className={` p-6`}>
+          <Link
+            href="/about"
+            className={`${pathname === "/about" ? classes["active"] : ""}`}
+            style={{ padding: "20px" }}
+          >
             ABOUT
           </Link>
-          <a className={` p-6`}>SERVICES</a>
-          <a className={` p-6`}>PORTFOLIO</a>
-          <a className={` p-6`}>CONTACT</a>
+          <Link href="" style={{ padding: "20px" }}>
+            SERVICES
+          </Link>
+          <Link href="" style={{ padding: "20px" }}>
+            PORTFOLIO
+          </Link>
+          <Link href="" style={{ padding: "20px" }}>
+            CONTACT
+          </Link>
         </div>
       </div>
     </nav>

@@ -1,3 +1,14 @@
+.container {
+  width: 400px;
+}
+
+.h2 {
+  font-family: var(--font-poppins);
+  font-size: 1.9rem;
+  font-weight: 600;
+  margin: 0.4rem 0.4rem;
+}
+
 .progress {
   border-radius: 30px;
   background: rgba(0, 0, 0, 0.25);
@@ -6,7 +17,7 @@
 }
 
 .progress-bar {
-  height: 13px;
+  height: 10px;
   border-radius: 30px;
   background-image: linear-gradient(
     to bottom,
@@ -17,30 +28,65 @@
   transition-property: width, background-color;
 }
 
-.progress-moved .progress-bar {
-  width: 85%;
+.progress-designing .progress-bar {
+  width: 80%;
   background-color: #34a1cd;
-  animation: progressAnimation 6s;
+  animation: progressDesigning 3s;
 }
-
-.progress-moved .progress-bar2 {
-  width: 85%;
-  background-color: #34a1cd;
-  animation: progressAnimation 6s;
-}
-
-@keyframes progressAnimation {
+@keyframes progressDesigning {
   0% {
     width: 5%;
     background-color: #99d7f0;
   }
   100% {
-    width: 85%;
+    width: 80%;
     background-color: #34a1cd;
   }
 }
 
-.container {
-  width: 40%;
-  text-align: center;
+.progress-frontend .progress-bar {
+  width: 70%;
+  background-color: #34a1cd;
+  animation: progressFrontend 3s;
+}
+@keyframes progressFrontend {
+  0% {
+    width: 5%;
+    background-color: #99d7f0;
+  }
+  100% {
+    width: 70%;
+    background-color: #34a1cd;
+  }
+}
+
+.progress-backend .progress-bar {
+  width: 65%;
+  background-color: #34a1cd;
+  animation: progressBackend 3s;
+}
+@keyframes progressBackend {
+  0% {
+    width: 5%;
+    background-color: #99d7f0;
+  }
+  100% {
+    width: 65%;
+    background-color: #34a1cd;
+  }
+}
+.progress-reactnative .progress-bar {
+  width: 50%;
+  background-color: #34a1cd;
+  animation: progressMobile 3s;
+}
+@keyframes progressMobile {
+  0% {
+    width: 5%;
+    background-color: #99d7f0;
+  }
+  100% {
+    width: 50%;
+    background-color: #34a1cd;
+  }
 }

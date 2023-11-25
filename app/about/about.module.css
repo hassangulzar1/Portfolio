@@ -1,6 +1,6 @@
 .bg {
   background-image: url("../../assets/bg.jpg");
-  height: 100vh;
+  height: 120vh;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;

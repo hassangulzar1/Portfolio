@@ -1,7 +1,5 @@
 .svgIcon {
   background-color: #4691f6;
-  width: 4rem;
-  height: 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -39,7 +37,7 @@
 }
 
 .location {
-  margin-top: 0.4rem;
+  margin-top: 1rem;
   font-size: 1.6rem;
   color: #130f49;
   font-weight: 700;

@@ -94,7 +94,7 @@ const page = () => {
         >
           Education
         </h1>
-        <div className=" ms-16 my-10">
+        <div className=" ms-5 sm:ms-16 my-10">
           <AboutList />
         </div>
       </div>

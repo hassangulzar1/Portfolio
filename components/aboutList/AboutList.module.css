@@ -1,0 +1,54 @@
+.svgIcon {
+  background-color: #4691f6;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.svg-icon {
+  width: 3rem;
+  height: 3rem;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: #ffff;
+}
+
+.svg-icon circle {
+  stroke: #4691f6;
+  stroke-width: 1;
+}
+
+.date {
+  font-size: 1.6rem;
+  color: #4691f6;
+  font-weight: 700;
+  font-family: var(--font-poppins);
+}
+
+.heading {
+  font-size: 2rem;
+  color: #130f49;
+  font-weight: 700;
+  font-family: var(--font-poppins);
+}
+
+.location {
+  margin-top: 0.4rem;
+  font-size: 1.6rem;
+  color: #130f49;
+  font-weight: 700;
+  font-family: var(--font-poppins);
+}
+
+.description {
+  margin: 0.3rem 1rem 2rem 0;
+  color: #888888;
+  font-size: 1.3rem;
+  font-family: var(--font-poppins);
+}

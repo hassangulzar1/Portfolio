@@ -3,6 +3,8 @@ import DownNavbar from "@/components/downNavbar/DownNavbar";
 import classes from "./about.module.css";
 import Button from "@/components/button/Button";
 import ProgressBars from "@/components/progressbars/ProgressBars";
+import { AboutList } from "@/components/aboutList/AboutList";
+
 const page = () => {
   return (
     <>
@@ -76,16 +78,26 @@ const page = () => {
               className=" text-2xl text-center mx-3 sm:mx-6 my-6 font-medium"
               style={{ fontFamily: "var(--font-karla)" }}
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quo
-              omnis consectetur hic reiciendis nostrum non tempore vero
-              necessitatibus?
+              The mentioned skills are those that I have worked with But every
+              day I push myself to get my hands dirty in every technology to be
+              a proper software engineer.
             </h3>
           </div>
         </div>
       </div>
 
       {/* About my Education  */}
-      <div className=" container"></div>
+      <div className="container mx-auto my-10">
+        <h1
+          className=" text-7xl font-bold ms-3 sm:ms-0"
+          style={{ fontFamily: "var(--font-poppins)", color: "#130F49" }}
+        >
+          Education
+        </h1>
+        <div className=" ms-16 my-10">
+          <AboutList />
+        </div>
+      </div>
     </>
   );
 };

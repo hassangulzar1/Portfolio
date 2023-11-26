@@ -3,7 +3,7 @@ import classes from "./AboutList.module.css";
 
 export const AboutList = () => {
   return (
-    <div className=" flex gap-4">
+    <div className=" flex gap-4 my-20">
       <div
         className={`${classes.svgIcon} w-40 h-14 sm:h-20 lg:w-28 lg:h-16 xl:w-20`}
       >
@@ -23,7 +23,7 @@ export const AboutList = () => {
           the necessary regelialia. It is a paradisematic country, in which
           roasted parts of sentences fly into your mouth.
         </h2>
-        <hr className=" font-bold me-9" />
+        <hr className=" font-bold me-9 border-gray-400" />
       </div>
     </div>
   );

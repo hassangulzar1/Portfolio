@@ -45,11 +45,11 @@ const page = () => {
             <ProgressBars
               barTitle="React Js"
               bar="progress-reactjs"
-              barLength="65%"
+              barLength="75%"
             />
             <ProgressBars
               barTitle="Next Js"
-              bar="progress-reactjs"
+              bar="progress-nextjs"
               barLength="65%"
             />
             <ProgressBars

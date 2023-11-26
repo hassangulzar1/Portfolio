@@ -39,6 +39,7 @@
   background-color: #34a1cd;
   animation: progressDesigning 3s;
 }
+
 @keyframes progressDesigning {
   0% {
     width: 5%;
@@ -99,11 +100,27 @@
 }
 
 .progress-reactjs .progress-bar {
+  width: 70%;
+  background-color: #34a1cd;
+  animation: progressReactjs 3s;
+}
+@keyframes progressReactjs {
+  0% {
+    width: 5%;
+    background-color: #99d7f0;
+  }
+  100% {
+    width: 70%;
+    background-color: #34a1cd;
+  }
+}
+
+.progress-nextjs .progress-bar {
   width: 65%;
   background-color: #34a1cd;
-  animation: progressBackend 3s;
+  animation: progressNextjs 3s;
 }
-@keyframes progressBackend {
+@keyframes progressNextjs {
   0% {
     width: 5%;
     background-color: #99d7f0;

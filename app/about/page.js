@@ -23,22 +23,52 @@ const page = () => {
           <hr style={{ margin: "0px 100px", color: "#130f49" }} />
           <div className="mx-5 flex justify-center flex-wrap">
             <ProgressBars
-              barTitle="Designing"
+              barTitle="HTML"
               bar="progress-designing"
               barLength="80%"
             />
             <ProgressBars
-              barTitle="Front-End"
+              barTitle="Css"
               bar="progress-frontend"
               barLength="70%"
             />
             <ProgressBars
-              barTitle="back-End"
-              bar="progress-backend"
+              barTitle="JavaScript"
+              bar="progress-javascript"
               barLength="70%"
             />
             <ProgressBars
-              barTitle="Mobile-Apps"
+              barTitle="typeScript"
+              bar="progress-typescript"
+              barLength="65%"
+            />
+            <ProgressBars
+              barTitle="React Js"
+              bar="progress-reactjs"
+              barLength="65%"
+            />
+            <ProgressBars
+              barTitle="Next Js"
+              bar="progress-reactjs"
+              barLength="65%"
+            />
+            <ProgressBars
+              barTitle="Node Js"
+              bar="progress-nodejs"
+              barLength="50%"
+            />
+            <ProgressBars
+              barTitle="Express Js"
+              bar="progress-expressjs"
+              barLength="50%"
+            />
+            <ProgressBars
+              barTitle="mongoDb"
+              bar="progress-mongodb"
+              barLength="70%"
+            />
+            <ProgressBars
+              barTitle="React Native"
               bar="progress-reactnative"
               barLength="50%"
             />
@@ -55,6 +85,7 @@ const page = () => {
       </div>
 
       {/* About my Education  */}
+      <div className=" container"></div>
     </>
   );
 };

@@ -9,6 +9,12 @@
   margin: 0.4rem 0.4rem;
 }
 
+.h3 {
+  font-family: var(--font-poppins);
+  font-weight: 400;
+  color: #58b2d6;
+  font-size: 1.9rem;
+}
 .progress {
   border-radius: 30px;
   background: rgba(0, 0, 0, 0.25);
@@ -60,7 +66,39 @@
   }
 }
 
-.progress-backend .progress-bar {
+.progress-javascript .progress-bar {
+  width: 70%;
+  background-color: #34a1cd;
+  animation: progressJavascript 3s;
+}
+@keyframes progressJavascript {
+  0% {
+    width: 5%;
+    background-color: #99d7f0;
+  }
+  100% {
+    width: 70%;
+    background-color: #34a1cd;
+  }
+}
+
+.progress-typescript .progress-bar {
+  width: 65%;
+  background-color: #34a1cd;
+  animation: progressTypescript 3s;
+}
+@keyframes progressTypescript {
+  0% {
+    width: 5%;
+    background-color: #99d7f0;
+  }
+  100% {
+    width: 65%;
+    background-color: #34a1cd;
+  }
+}
+
+.progress-reactjs .progress-bar {
   width: 65%;
   background-color: #34a1cd;
   animation: progressBackend 3s;
@@ -75,6 +113,54 @@
     background-color: #34a1cd;
   }
 }
+
+.progress-nodejs .progress-bar {
+  width: 50%;
+  background-color: #34a1cd;
+  animation: progressNodejs 3s;
+}
+@keyframes progressNodejs {
+  0% {
+    width: 5%;
+    background-color: #99d7f0;
+  }
+  100% {
+    width: 50%;
+    background-color: #34a1cd;
+  }
+}
+.progress-expressjs .progress-bar {
+  width: 50%;
+  background-color: #34a1cd;
+  animation: progressExpressjs 3s;
+}
+@keyframes progressExpressjs {
+  0% {
+    width: 5%;
+    background-color: #99d7f0;
+  }
+  100% {
+    width: 50%;
+    background-color: #34a1cd;
+  }
+}
+
+.progress-mongodb .progress-bar {
+  width: 70%;
+  background-color: #34a1cd;
+  animation: progressMongodb 3s;
+}
+@keyframes progressMongodb {
+  0% {
+    width: 5%;
+    background-color: #99d7f0;
+  }
+  100% {
+    width: 70%;
+    background-color: #34a1cd;
+  }
+}
+
 .progress-reactnative .progress-bar {
   width: 50%;
   background-color: #34a1cd;

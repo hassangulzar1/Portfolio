@@ -5,7 +5,7 @@ const ProgressBars = ({ barTitle, bar, barLength }) => {
     <div className={`${classes.container} my-5 mx-5`}>
       <div className=" flex justify-between">
         <h2 className={classes.h2}>{barTitle}</h2>
-        <h2 className={classes.h2}>{barLength}</h2>
+        <h3 className={classes.h3}>{barLength}</h3>
       </div>
       <div className={`${classes.progress} ${classes[bar]}`}>
         <div className={classes["progress-bar"]}></div>

@@ -1,9 +1,9 @@
 import React from "react";
 import classes from "./AboutList.module.css";
 
-export const AboutList = () => {
+export const AboutList = (props) => {
   return (
-    <div className=" flex gap-4 my-20">
+    <div className=" flex gap-6 my-20">
       <div
         className={`${classes.svgIcon} w-40 h-14 sm:h-20 lg:w-28 lg:h-16 xl:w-20`}
       >
@@ -13,16 +13,10 @@ export const AboutList = () => {
       </div>
 
       <div className=" sm:me-10">
-        <h2 className={classes.date}>2014-2015</h2>
-        <h2 className={classes.heading}>
-          Bachelor of Science in Computer Science
-        </h2>
-        <h2 className={classes.location}>Cambridge University</h2>
-        <h2 className={classes.description}>
-          A small river named Duden flows by their place and supplies it with
-          the necessary regelialia. It is a paradisematic country, in which
-          roasted parts of sentences fly into your mouth.
-        </h2>
+        <h2 className={classes.date}>{props.date}</h2>
+        <h2 className={classes.heading}>{props.title}</h2>
+        <h2 className={classes.location}>{props.location}</h2>
+        <h2 className={classes.description}>{props.description}</h2>
         <hr className=" font-bold me-9 border-gray-400" />
       </div>
     </div>

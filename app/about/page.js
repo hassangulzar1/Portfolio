@@ -4,8 +4,24 @@ import classes from "./about.module.css";
 import Button from "@/components/button/Button";
 import ProgressBars from "@/components/progressbars/ProgressBars";
 import { AboutList } from "@/components/aboutList/AboutList";
+import client from "@/lib/contentfullClient";
 
-const page = () => {
+const fetchEducation = async () => {
+  const response = await client.getEntries({ content_type: "education" });
+  const data = response.items.map((items) => {
+    return {
+      date: items.fields.date,
+      title: items.fields.title,
+      location: items.fields.location,
+      description: items.fields.description,
+    };
+  });
+  return data;
+};
+
+const page = async () => {
+  const education = await fetchEducation();
+
   return (
     <>
       <DownNavbar title="About Me" />
@@ -95,7 +111,14 @@ const page = () => {
           Education
         </h1>
         <div className=" ms-5 sm:ms-16 my-10">
-          <AboutList />
+          {education.map((items) => (
+            <AboutList
+              date={items.date}
+              title={items.title}
+              location={items.location}
+              description={items.description}
+            />
+          ))}
         </div>
       </div>
     </>

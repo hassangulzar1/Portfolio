@@ -36,7 +36,11 @@ const Navbar = () => {
           >
             ABOUT
           </Link>
-          <Link href="" style={{ padding: "20px" }}>
+          <Link
+            href="/services"
+            className={`${pathname === "/services" ? classes["active"] : ""}`}
+            style={{ padding: "20px" }}
+          >
             SERVICES
           </Link>
           <Link href="" style={{ padding: "20px" }}>

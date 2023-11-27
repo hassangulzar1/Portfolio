@@ -29,7 +29,10 @@ const page = async () => {
       <div className={classes.bg}>
         <div className=" w-4/5" style={{ backgroundColor: "#FFFFFF" }}>
           <h1>About MySelf</h1>
-          <p className=" sm:mx-8 md:mx-20 lg:mx-32 xl:mx-40 2xl:mx-52">
+          <p
+            className=" sm:mx-8 md:mx-20 lg:mx-32 xl:mx-40 2xl:mx-52"
+            style={{ color: "#130F49" }}
+          >
             Hey there! I'm a full-stack web developer who loves to solve
             problems and is passionate about LeetCode.
           </p>
@@ -92,7 +95,7 @@ const page = async () => {
             />
             <h3
               className=" text-2xl text-center mx-3 sm:mx-6 my-6 font-medium"
-              style={{ fontFamily: "var(--font-karla)" }}
+              style={{ fontFamily: "var(--font-karla)", color: "#130F49" }}
             >
               The mentioned skills are those that I have worked with But every
               day I push myself to get my hands dirty in every technology to be

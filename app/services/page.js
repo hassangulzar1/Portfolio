@@ -27,6 +27,7 @@ export default async function page() {
         className=" text-center my-9 text-6xl font-bold"
         style={{
           fontFamily: "var(--font-poppins)",
+          color: "#130F49",
         }}
       >
         What I Do?
@@ -41,30 +42,6 @@ export default async function page() {
             iconColor={items.iconColor}
           />
         ))}
-
-        {/* <ServiceCard
-            iconName="webdev"
-            title="Web Development"
-            desciption="lorem12 safha odaf h soifsa ghio"
-            iconBackground="#D9F4FE"
-            iconColor="#58CFFD"
-          />
-        
-        <ServiceCard
-          iconName="videoediting"
-          title="Video Editing"
-          desciption="lorem12 safha odaf h soifsa ghio"
-          iconBackground="#F4F3FF"
-          iconColor="#665AFB"
-        />
-
-        <ServiceCard
-          iconName="errorfixing"
-          title="Bugs & Error fixing"
-          desciption="lorem12 safha odaf h soifsa ghio"
-          iconBackground="#FFF5F6"
-          iconColor="#F66565"
-        /> */}
       </div>
     </div>
   );

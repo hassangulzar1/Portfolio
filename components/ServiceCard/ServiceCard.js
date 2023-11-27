@@ -51,6 +51,7 @@ export default function ServiceCard({
         style={{
           fontFamily: "var(--font-poppins)",
           fontWeight: 600,
+          color: "#130F49",
         }}
       >
         {title}

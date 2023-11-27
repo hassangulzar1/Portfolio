@@ -1,18 +1,22 @@
 import React from "react";
 import classes from "./PortfolioCard.module.css";
+import Image from "next/image";
+import pic from "@/assets/Nordic.png";
 
 export default function PortfolioCard() {
   return (
     <article className={classes["article-wrapper"]}>
       <div
         className={`${classes["rounded-lg"]} ${classes["container-project"]}`}
-      ></div>
+      >
+        <Image src={pic} alt="Picture of the Project" />
+      </div>
       <div className={classes["project-info"]}>
         <div className={classes["flex-pr"]}>
           <div
             className={`${classes["project-title"]} ${classes["text-nowrap"]}`}
           >
-            Project
+            Student Management system
           </div>
           <div className={classes["project-hover"]}>
             <svg

@@ -28,7 +28,10 @@ export default function page() {
             <li className="text-xl">Full-Stack</li>
           </div>
 
-          <div className="my-20 mx-10">
+          <div className="my-20 mx-10 flex flex-wrap gap-24 justify-center">
+            <PortfolioCard />
+            <PortfolioCard />
+            <PortfolioCard />
             <PortfolioCard />
           </div>
         </div>

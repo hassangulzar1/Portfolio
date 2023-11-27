@@ -57,7 +57,7 @@ export default function ServiceCard({
       </h1>
       <hr style={{ margin: "0 180px", borderColor: iconColor }} />
       <p
-        className=" mt-6 text-xl text-gray-400"
+        className=" mt-4 text-xl text-gray-400"
         style={{ fontFamily: "var(--font-poppins)" }}
       >
         {desciption}

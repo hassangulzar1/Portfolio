@@ -43,7 +43,11 @@ const Navbar = () => {
           >
             SERVICES
           </Link>
-          <Link href="" style={{ padding: "20px" }}>
+          <Link
+            href="/portfolio"
+            className={`${pathname === "/portfolio" ? classes["active"] : ""}`}
+            style={{ padding: "20px" }}
+          >
             PORTFOLIO
           </Link>
           <Link href="" style={{ padding: "20px" }}>

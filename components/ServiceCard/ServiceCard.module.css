@@ -1,0 +1,4 @@
+.hover:hover {
+  transition: 0.5s ease;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}

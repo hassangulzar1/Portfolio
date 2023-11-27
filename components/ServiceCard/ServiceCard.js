@@ -1,32 +1,47 @@
 import { FaLaptopCode } from "react-icons/fa6";
 import { BsFillFileCodeFill } from "react-icons/bs";
 import { LiaPhotoVideoSolid } from "react-icons/lia";
-
-export default function ServiceCard({ iconName }) {
+import { FaBugSlash } from "react-icons/fa6";
+import classes from "./ServiceCard.module.css";
+export default function ServiceCard({
+  iconName,
+  title,
+  desciption,
+  iconBackground,
+  iconColor,
+}) {
   let icon;
 
-  switch ("laptop") {
-    case "laptop":
+  switch (iconName) {
+    case "webdev":
       icon = <FaLaptopCode />;
       break;
-    case "phone":
+    case "appdev":
       icon = <BsFillFileCodeFill />;
       break;
-    case "heart":
+    case "videoediting":
       icon = <LiaPhotoVideoSolid />;
+      break;
+    case "errorfixing":
+      icon = <FaBugSlash />;
       break;
     default:
       icon = null;
   }
 
   return (
-    <div className=" w-2/5 flex flex-col">
+    <div
+      className={
+        `flex flex-col my-4 px-10 py-10 text-center gap-6 ` + classes.hover
+      }
+      style={{ width: "500px" }}
+    >
       <h1
         className=" text-6xl mx-auto p-3"
         style={{
-          backgroundColor: "#D9F4FE",
+          backgroundColor: iconBackground,
           borderRadius: "10px",
-          color: "#58CFFD",
+          color: iconColor,
         }}
       >
         {icon}
@@ -35,11 +50,18 @@ export default function ServiceCard({ iconName }) {
         className="text-center mt-8 text-3xl"
         style={{
           fontFamily: "var(--font-poppins)",
-          fontWeight: 500,
+          fontWeight: 600,
         }}
       >
-        Web Development
+        {title}
       </h1>
+      <hr style={{ margin: "0 180px", borderColor: iconColor }} />
+      <p
+        className=" mt-6 text-xl text-gray-400"
+        style={{ fontFamily: "var(--font-poppins)" }}
+      >
+        {desciption}
+      </p>
     </div>
   );
 }

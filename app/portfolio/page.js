@@ -2,6 +2,8 @@ import DownNavbar from "@/components/downNavbar/DownNavbar";
 import classes from "./Portfolio.module.css";
 import PortfolioCard from "@/components/portfolioCard/PortfolioCard";
 import client from "@/lib/contentfullClient";
+import Portolios from "@/components/Portfolio/Portolios";
+
 const fetchProjects = async () => {
   const response = await client.getEntries({ content_type: "portfolio" });
   const data = response.items.map((items) => {
@@ -11,6 +13,7 @@ const fetchProjects = async () => {
       link: items.fields.projectLink,
       firstTechnology: items.fields.firstTitle,
       secondTechnology: items.fields.secondTitle,
+      id: items.fields.id,
     };
   });
   return data;
@@ -18,7 +21,7 @@ const fetchProjects = async () => {
 
 export default async function page() {
   const Projects = await fetchProjects();
-  console.log(Projects[0].image.fields.file.url);
+
   return (
     <>
       <DownNavbar title="Portfolio" />
@@ -36,14 +39,13 @@ export default async function page() {
           >
             Recent Work
           </h1>
-
-          <div className={"ms-5 mt-6 flex gap-7 sm:gap-10 " + classes.worksDiv}>
+          <Portolios Projects={Projects} />
+          {/* <div className={"ms-5 mt-6 flex gap-7 sm:gap-10 " + classes.worksDiv}>
             <li className="text-xl">All</li>
             <li className="text-xl">Web Designs</li>
             <li className="text-xl">Front-End</li>
             <li className="text-xl">Full-Stack</li>
           </div>
-
           <div className="my-20 mx-10 flex flex-wrap gap-24 justify-center">
             {Projects.map((items) => (
               <PortfolioCard
@@ -54,7 +56,7 @@ export default async function page() {
                 link={items.link}
               />
             ))}
-          </div>
+          </div> */}
         </div>
       </div>
     </>

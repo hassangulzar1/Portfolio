@@ -6,7 +6,7 @@
   height: 100vh;
 }
 
-.worksDiv li {
+/* .worksDiv li {
   font-family: var(--font-karla);
   cursor: pointer;
 }
@@ -14,4 +14,4 @@
 .worksDiv li:active {
   color: #34a1cd;
   transition: 0.3s ease;
-}
+} */

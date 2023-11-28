@@ -1,7 +1,7 @@
 import React from "react";
 import classes from "./PortfolioCard.module.css";
 import Image from "next/image";
-import pic from "@/assets/Nordic.png";
+import pic from "@/assets/sevices/Nordic.png";
 
 export default function PortfolioCard() {
   return (

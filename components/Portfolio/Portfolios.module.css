@@ -2,8 +2,7 @@
   font-family: var(--font-karla);
   cursor: pointer;
 }
-.worksDiv li:hover,
-.worksDiv li:active {
+.worksDiv li:hover {
   color: #34a1cd;
   transition: 0.3s ease;
 }

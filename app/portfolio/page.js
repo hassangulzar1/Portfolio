@@ -1,6 +1,5 @@
 import DownNavbar from "@/components/downNavbar/DownNavbar";
 import classes from "./Portfolio.module.css";
-import PortfolioCard from "@/components/portfolioCard/PortfolioCard";
 import client from "@/lib/contentfullClient";
 import Portolios from "@/components/Portfolio/Portolios";
 
@@ -40,23 +39,6 @@ export default async function page() {
             Recent Work
           </h1>
           <Portolios Projects={Projects} />
-          {/* <div className={"ms-5 mt-6 flex gap-7 sm:gap-10 " + classes.worksDiv}>
-            <li className="text-xl">All</li>
-            <li className="text-xl">Web Designs</li>
-            <li className="text-xl">Front-End</li>
-            <li className="text-xl">Full-Stack</li>
-          </div>
-          <div className="my-20 mx-10 flex flex-wrap gap-24 justify-center">
-            {Projects.map((items) => (
-              <PortfolioCard
-                title={items.name}
-                imagePath={items.image.fields.file.url}
-                firstTech={items.firstTechnology}
-                secondTech={items.secondTechnology}
-                link={items.link}
-              />
-            ))}
-          </div> */}
         </div>
       </div>
     </>

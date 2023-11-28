@@ -1,8 +1,24 @@
 import DownNavbar from "@/components/downNavbar/DownNavbar";
 import classes from "./Portfolio.module.css";
 import PortfolioCard from "@/components/portfolioCard/PortfolioCard";
+import client from "@/lib/contentfullClient";
+const fetchProjects = async () => {
+  const response = await client.getEntries({ content_type: "portfolio" });
+  const data = response.items.map((items) => {
+    return {
+      image: items.fields.projectImg,
+      name: items.fields.projectName,
+      link: items.fields.projectLink,
+      firstTechnology: items.fields.firstTitle,
+      secondTechnology: items.fields.secondTitle,
+    };
+  });
+  return data;
+};
 
-export default function page() {
+export default async function page() {
+  const Projects = await fetchProjects();
+  console.log(Projects[0].image.fields.file.url);
   return (
     <>
       <DownNavbar title="Portfolio" />
@@ -29,10 +45,15 @@ export default function page() {
           </div>
 
           <div className="my-20 mx-10 flex flex-wrap gap-24 justify-center">
-            <PortfolioCard />
-            <PortfolioCard />
-            <PortfolioCard />
-            <PortfolioCard />
+            {Projects.map((items) => (
+              <PortfolioCard
+                title={items.name}
+                imagePath={items.image.fields.file.url}
+                firstTech={items.firstTechnology}
+                secondTech={items.secondTechnology}
+                link={items.link}
+              />
+            ))}
           </div>
         </div>
       </div>

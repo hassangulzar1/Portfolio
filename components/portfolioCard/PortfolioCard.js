@@ -1,22 +1,28 @@
 import React from "react";
 import classes from "./PortfolioCard.module.css";
 import Image from "next/image";
-import pic from "@/assets/sevices/Nordic.png";
 
-export default function PortfolioCard() {
+export default function PortfolioCard(props) {
   return (
-    <article className={classes["article-wrapper"]}>
+    <a href={props.link} target="_black" className={classes["article-wrapper"]}>
       <div
         className={`${classes["rounded-lg"]} ${classes["container-project"]}`}
       >
-        <Image src={pic} alt="Picture of the Project" />
+        {props.imagePath && (
+          <Image
+            src={"https://" + props.imagePath}
+            alt="Picture of the Project"
+            width={500}
+            height={500}
+          />
+        )}
       </div>
       <div className={classes["project-info"]}>
         <div className={classes["flex-pr"]}>
           <div
             className={`${classes["project-title"]} ${classes["text-nowrap"]}`}
           >
-            Student Management system
+            {props.title}
           </div>
           <div className={classes["project-hover"]}>
             <svg
@@ -45,11 +51,11 @@ export default function PortfolioCard() {
             }}
             className={classes["project-type"]}
           >
-            • Analytics
+            • {props.firstTech}
           </span>
-          <span className={classes["project-type"]}>• Dashboards</span>
+          <span className={classes["project-type"]}>• {props.secondTech}</span>
         </div>
       </div>
-    </article>
+    </a>
   );
 }

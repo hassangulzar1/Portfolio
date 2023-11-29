@@ -4,13 +4,23 @@ import PortfolioCard from "../portfolioCard/PortfolioCard";
 import classes from "./Portfolios.module.css";
 export default function Portolios({ Projects }) {
   const [filterBy, setfilterBy] = React.useState("all");
+  const [inProp, setInProps] = React.useState(false);
 
   const targetValue = (e) => {
+    setInProps(true);
     setfilterBy(e.target.id);
+    setTimeout(() => {
+      setInProps(false);
+    }, 400);
   };
 
-  const filteredArray = Projects.filter((items) => items.id == filterBy);
-
+  const filteredArray = Projects.filter((items) => {
+    if (filterBy === "all") {
+      return items;
+    } else {
+      return items.id == filterBy;
+    }
+  });
   return (
     <>
       <div className={"ms-5 mt-6 flex gap-7 sm:gap-10 " + classes.worksDiv}>
@@ -44,26 +54,16 @@ export default function Portolios({ Projects }) {
         </li>
       </div>
       <div className="my-20 mx-10 flex flex-wrap gap-24 justify-center">
-        {filterBy != "all" &&
-          filteredArray.map((items) => (
-            <PortfolioCard
-              title={items.name}
-              imagePath={items.image.fields.file.url}
-              firstTech={items.firstTechnology}
-              secondTech={items.secondTechnology}
-              link={items.link}
-            />
-          ))}
-        {filterBy === "all" &&
-          Projects.map((items) => (
-            <PortfolioCard
-              title={items.name}
-              imagePath={items.image.fields.file.url}
-              firstTech={items.firstTechnology}
-              secondTech={items.secondTechnology}
-              link={items.link}
-            />
-          ))}
+        {filteredArray.map((items) => (
+          <PortfolioCard
+            inProp={inProp}
+            title={items.name}
+            imagePath={items.image.fields.file.url}
+            firstTech={items.firstTechnology}
+            secondTech={items.secondTechnology}
+            link={items.link}
+          />
+        ))}
       </div>
     </>
   );

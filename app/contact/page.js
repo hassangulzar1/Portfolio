@@ -1,0 +1,58 @@
+import React from "react";
+import DownNavbar from "@/components/downNavbar/DownNavbar";
+import classes from "./Contact.module.css";
+import { IoHome } from "react-icons/io5";
+import { FaPhoneAlt } from "react-icons/fa";
+import { IoMdMail } from "react-icons/io";
+import ContactDetail from "@/components/contact-detail/ContactDetail";
+import LeafletMap from "@/components/leafletmap/LeafletMap";
+export default function page() {
+  return (
+    <>
+      <DownNavbar title="Contact Me" />
+      <div className="container mx-auto my-20 ">
+        <div className="flex flex-col lg:flex-row">
+          <div className="flex lg:w-2/4 md:justify-center lg:mr-32 xl:mr-0 flex-wrap">
+            <div className="flex gap-5">
+              <ContactDetail
+                title="Pakistan, Faisalabad"
+                desc="Gulam rasool,St#3"
+                icon={
+                  <IoHome
+                    className=" text-5xl mx-auto"
+                    style={{ color: "#34A1CD" }}
+                  />
+                }
+              />
+
+              <ContactDetail
+                title="(+92) 3159165858"
+                desc="9am to 5pm"
+                icon={
+                  <FaPhoneAlt
+                    className=" text-5xl mx-auto"
+                    style={{ color: "#34A1CD" }}
+                  />
+                }
+              />
+              <ContactDetail
+                title="hassangulzar121@gmail.com"
+                desc="Send us your query any time!"
+                icon={
+                  <IoMdMail
+                    className=" text-5xl mx-auto"
+                    style={{ color: "#34A1CD" }}
+                  />
+                }
+              />
+            </div>
+          </div>
+
+          <div className="lg:w-2/4 mx-10 sm:mx-0">
+            <LeafletMap latitude={31.39} longitude={73.09} zoom={15} />
+          </div>
+        </div>
+      </div>
+    </>
+  );
+}

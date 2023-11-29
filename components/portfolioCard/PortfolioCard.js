@@ -2,8 +2,6 @@ import classes from "./PortfolioCard.module.css";
 import Image from "next/image";
 import CSSTransition from "react-transition-group/CSSTransition";
 export default function PortfolioCard(props) {
-  console.log(props.inProp);
-
   return (
     <CSSTransition in={props.inProp} classNames="fade" timeout={300}>
       <a

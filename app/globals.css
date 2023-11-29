@@ -36,9 +36,6 @@
 }
 
 .fade-enter-active {
-  /* opacity: 1;
-  transform: scale(0.5);
-  transition: opacity 300ms ease-out, transform 300ms ease-out; */
   animation: openCards 0.4s ease-out forwards;
 }
 

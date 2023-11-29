@@ -1,19 +1,19 @@
 import React from "react";
 import DownNavbar from "@/components/downNavbar/DownNavbar";
-import classes from "./Contact.module.css";
 import { IoHome } from "react-icons/io5";
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
 import ContactDetail from "@/components/contact-detail/ContactDetail";
 import LeafletMap from "@/components/leafletmap/LeafletMap";
+import Form from "@/components/form/Form";
 export default function page() {
   return (
     <>
       <DownNavbar title="Contact Me" />
       <div className="container mx-auto my-20 ">
         <div className="flex flex-col lg:flex-row">
-          <div className="flex lg:w-2/4 md:justify-center lg:mr-32 xl:mr-0 flex-wrap">
-            <div className="flex gap-5">
+          <div className="lg:w-2/4 lg:mr-32 xl:mr-0">
+            <div className="flex gap-5 flex-wrap md:justify-center">
               <ContactDetail
                 title="Pakistan, Faisalabad"
                 desc="Gulam rasool,St#3"
@@ -48,7 +48,7 @@ export default function page() {
             </div>
           </div>
 
-          <div className="lg:w-2/4 mx-10 sm:mx-0">
+          <div className="lg:w-2/4 mx-10 sm:mx-0 z-0">
             <LeafletMap latitude={31.39} longitude={73.09} zoom={15} />
           </div>
         </div>

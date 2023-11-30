@@ -6,6 +6,7 @@ import { IoMdMail } from "react-icons/io";
 import ContactDetail from "@/components/contact-detail/ContactDetail";
 import LeafletMap from "@/components/leafletmap/LeafletMap";
 import Form from "@/components/form/Form";
+import SocialMedia from "@/components/socialmedia/SocialMedia";
 export default function page() {
   return (
     <>
@@ -45,6 +46,16 @@ export default function page() {
                   />
                 }
               />
+            </div>
+            <div className=" flex flex-col">
+              <Form />
+              <h1
+                className=" text-3xl font-semibold text-center"
+                style={{ fontFamily: "var(--font-karla)" }}
+              >
+                Follow us here
+              </h1>
+              <SocialMedia />
             </div>
           </div>
 

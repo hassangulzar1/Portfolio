@@ -1,65 +1,24 @@
 import React from "react";
 import classes from "./Form.module.css";
-
 export default function Form() {
   return (
     <form className={classes.form}>
-      <div className={classes.flex}>
-        <label>
-          <input
-            className={classes.input}
-            type="text"
-            placeholder=""
-            required=""
-          />
-          <span>first name</span>
-        </label>
-
-        <label>
-          <input
-            className={classes.input}
-            type="text"
-            placeholder=""
-            required=""
-          />
-          <span>last name</span>
-        </label>
-      </div>
-
-      <label>
-        <input
-          className={classes.input}
-          type="email"
-          placeholder=""
-          required=""
-        />
-        <span>email</span>
-      </label>
-
-      <label>
-        <input
-          className={classes.input}
-          placeholder=""
-          type="tel"
-          required=""
-        />
-        <span>contact number</span>
-      </label>
-      <label>
-        <textarea
-          className={classes.input01}
-          placeholder=""
-          rows="3"
-          required=""
-        ></textarea>
-        <span>message</span>
-      </label>
-
-      <button href="#" className={classes.fancy}>
-        <span className={classes["top-key"]}></span>
-        <span className={classes.text}>submit</span>
-        <span className={classes["bottom-key-1"]}></span>
-        <span className={classes["bottom-key-2"]}></span>
+      <input type="text" placeholder="Name" className={classes.input} />
+      <input type="text" placeholder="Email" className={classes.input} />
+      <input type="text" placeholder="Subject" className={classes.input} />
+      <textarea
+        placeholder="Create a message here"
+        name=""
+        cols="30"
+        rows="3"
+        className={classes.input}
+      />
+      <button className={classes.cta} type="submit">
+        <span>Send</span>
+        <svg viewBox="0 0 13 10" height="10px" width="15px">
+          <path d="M1,5 L11,5"></path>
+          <polyline points="8 1 12 5 8 9"></polyline>
+        </svg>
       </button>
     </form>
   );

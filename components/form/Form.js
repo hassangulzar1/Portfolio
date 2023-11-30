@@ -83,7 +83,11 @@ export default function Form() {
         rows="3"
         className={classes.input}
       />
-      <button className={classes.cta} type="submit">
+      <button
+        className={`${classes.cta} ${loading && classes.disabled}`}
+        type="submit"
+        disabled={loading}
+      >
         <span>{loading ? "Sending..." : "Send"}</span>
         <svg viewBox="0 0 13 10" height="10px" width="15px">
           <path d="M1,5 L11,5"></path>

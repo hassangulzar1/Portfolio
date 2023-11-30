@@ -76,3 +76,8 @@
 .cta:active {
   transform: scale(0.95);
 }
+
+.disabled {
+  cursor: not-allowed;
+  background-color: rgb(151, 151, 151);
+}

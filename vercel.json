@@ -1,0 +1,8 @@
+{
+  "headers": [
+    {
+      "source": "/api/contentful",
+      "headers": [{ "key": "Access-Control-Allow-Origin", "value": "*" }]
+    }
+  ]
+}

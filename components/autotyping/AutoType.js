@@ -7,7 +7,6 @@ export default function AutoType() {
     words: [
       "MERN Stack Developer",
       "Problem Solver",
-      "Mobile Developer",
       "Freelancer",
       "Tech enthusiast",
     ],

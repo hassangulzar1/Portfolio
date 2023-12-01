@@ -88,11 +88,6 @@ const page = async () => {
               bar="progress-mongodb"
               barLength="70%"
             />
-            <ProgressBars
-              barTitle="React Native"
-              bar="progress-reactnative"
-              barLength="50%"
-            />
             <h3
               className=" text-2xl text-center mx-3 sm:mx-6 my-6 font-medium"
               style={{ fontFamily: "var(--font-karla)", color: "#130F49" }}

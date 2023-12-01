@@ -15,7 +15,7 @@ export default function PortfolioCard(props) {
         >
           {props.imagePath && (
             <Image
-              src={"http://" + props.imagePath}
+              src={"https://" + props.imagePath}
               alt="Picture of the Project"
               width={500}
               height={500}

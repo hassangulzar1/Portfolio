@@ -62,7 +62,7 @@ export default function page() {
           </div>
 
           <div className="lg:w-2/4 mx-10 sm:mx-0 z-0">
-            <LeafletMap latitude={31.39} longitude={73.09} zoom={15} />
+            <LeafletMap />
           </div>
         </div>
       </div>

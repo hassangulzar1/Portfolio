@@ -1,10 +1,9 @@
 import Image from "next/image";
 import heroImg from "../assets/homeImg.png";
 import classes from "./home.module.css";
-import Button from "@/components/button/Button";
 import SocialMedia from "@/components/socialmedia/SocialMedia";
 import AutoType from "@/components/autotyping/AutoType";
-
+import MainPageBtn from "@/components/mainPageButtons/MainPageBtn";
 export default function Home() {
   return (
     <div className={`container mx-auto ${classes.hero}`}>
@@ -20,16 +19,7 @@ export default function Home() {
             way.
           </p>
           <div className="flex gap-5 my-5 z-0">
-            <Button
-              background="#130F49"
-              hover="darkBlueHover"
-              path="/portfolio"
-            >
-              See my work
-            </Button>
-            <Button background="#34a1cd" hover="lightBlueHover" path="/contact">
-              Start A project
-            </Button>
+            <MainPageBtn />
           </div>
           <div className=" my-10">
             <SocialMedia />

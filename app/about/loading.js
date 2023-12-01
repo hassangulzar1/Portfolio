@@ -9,7 +9,7 @@ export default function Loading() {
       <DownNavbar title="About Me" />
       {/* About my Self Box  */}
       <div className={classes.bg}>
-        <div className=" w-4/5" style={{ backgroundColor: "#FFFFFF" }}>
+        <div className=" w-4/5 my-20" style={{ backgroundColor: "#FFFFFF" }}>
           <h1>About MySelf</h1>
           <p
             className=" sm:mx-8 md:mx-20 lg:mx-32 xl:mx-40 2xl:mx-52"

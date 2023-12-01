@@ -7,9 +7,11 @@ import ContactDetail from "@/components/contact-detail/ContactDetail";
 import LeafletMap from "@/components/leafletmap/LeafletMap";
 import Form from "@/components/form/Form";
 import SocialMedia from "@/components/socialmedia/SocialMedia";
+import { ToastContainer } from "react-toastify";
 export default function page() {
   return (
     <>
+      <ToastContainer />
       <DownNavbar title="Contact Me" />
       <div className="container mx-auto my-20 ">
         <div className="flex flex-col lg:flex-row">

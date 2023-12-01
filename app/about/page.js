@@ -48,7 +48,7 @@ const page = async () => {
             problems and is passionate about LeetCode.
           </p>
           <div className=" w-3/4 sm:w-2/5 md:w-1/3 lg:w-5/12 xl:w-1/3 2xl:w-1/4 mx-auto my-7">
-            <a href="" download={"Resume.pdf"}>
+            <a href="/Resume.pdf" download={"Resume.pdf"}>
               <Button background="#130f49" hover="darkBlueHover">
                 DOWNLOAD RESUME
               </Button>

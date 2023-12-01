@@ -7,8 +7,10 @@ import { AboutList } from "@/components/aboutList/AboutList";
 import client from "@/lib/contentfullClient";
 
 const fetchEducation = async () => {
-  const response = await client.getEntries({ content_type: "education" });
-  const data = response.items.map((items) => {
+  const education = await client.getEntries({ content_type: "education" });
+  const experience = await client.getEntries({ content_type: "experience" });
+
+  const educationData = education.items.map((items) => {
     return {
       date: items.fields.date,
       title: items.fields.title,
@@ -16,18 +18,27 @@ const fetchEducation = async () => {
       description: items.fields.description,
     };
   });
-  return data;
+  const experienceData = experience.items.map((items) => {
+    return {
+      date: items.fields.date,
+      title: items.fields.title,
+      location: items.fields.location,
+      description: items.fields.description,
+    };
+  });
+
+  return { educationData, experienceData };
 };
 
 const page = async () => {
-  const education = await fetchEducation();
+  const data = await fetchEducation();
 
   return (
     <>
       <DownNavbar title="About Me" />
       {/* About my Self Box  */}
       <div className={classes.bg}>
-        <div className=" w-4/5" style={{ backgroundColor: "#FFFFFF" }}>
+        <div className=" w-4/5 my-20" style={{ backgroundColor: "#FFFFFF" }}>
           <h1>About MySelf</h1>
           <p
             className=" sm:mx-8 md:mx-20 lg:mx-32 xl:mx-40 2xl:mx-52"
@@ -109,7 +120,26 @@ const page = async () => {
           Education
         </h1>
         <div className=" ms-5 sm:ms-16 my-10">
-          {education.map((items) => (
+          {data.educationData.map((items) => (
+            <AboutList
+              date={items.date}
+              title={items.title}
+              location={items.location}
+              description={items.description}
+            />
+          ))}
+        </div>
+      </div>
+      {/* About my Education  */}
+      <div className="container mx-auto my-10">
+        <h1
+          className=" text-7xl font-bold ms-3 sm:ms-0"
+          style={{ fontFamily: "var(--font-poppins)", color: "#130F49" }}
+        >
+          Experience
+        </h1>
+        <div className=" ms-5 sm:ms-16 my-10">
+          {data.experienceData.map((items) => (
             <AboutList
               date={items.date}
               title={items.title}

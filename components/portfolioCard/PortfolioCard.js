@@ -5,6 +5,7 @@ export default function PortfolioCard(props) {
   return (
     <CSSTransition in={props.inProp} classNames="fade" timeout={300}>
       <a
+        key={props.key}
         href={props.link}
         target="_black"
         className={classes["article-wrapper"]}

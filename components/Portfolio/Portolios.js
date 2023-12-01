@@ -56,6 +56,7 @@ export default function Portolios({ Projects }) {
       <div className="my-20 mx-10 flex flex-wrap gap-24 justify-center">
         {filteredArray.map((items) => (
           <PortfolioCard
+            key={items.link}
             inProp={inProp}
             title={items.name}
             imagePath={items.image.fields.file.url}

@@ -11,7 +11,7 @@ export default function Home() {
         <div className=" my-auto inline-block md:w-1/2 text-center sm:text-start mx-4 sm:mx-0">
           <h6 className={classes.welcome}>Hi There!</h6>
           <h1 className={classes.im}>
-            I'm <span className={classes.name}>Hassan Gulzar</span>
+            I&apos;m <span className={classes.name}>Hassan Gulzar</span>
           </h1>
           <AutoType />
           <p className={`${classes.para} my-8`}>

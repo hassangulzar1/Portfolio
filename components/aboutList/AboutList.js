@@ -4,7 +4,7 @@ import Image from "next/image";
 import aimPic from "@/assets/aim.png";
 export const AboutList = (props) => {
   return (
-    <div className=" flex gap-6 my-20">
+    <div className=" flex gap-6 my-20" key={props.key}>
       <div
         className={`${classes.svgIcon} w-40 h-14 sm:h-20 lg:w-28 lg:h-16 xl:w-20`}
       >

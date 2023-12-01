@@ -44,8 +44,8 @@ const page = async () => {
             className=" sm:mx-8 md:mx-20 lg:mx-32 xl:mx-40 2xl:mx-52"
             style={{ color: "#130F49" }}
           >
-            Hey there! I'm a full-stack web developer who loves to solve
-            problems and is passionate about LeetCode.
+            Hey there&#33; I&apos;m a full-stack web developer who loves to
+            solve problems and is passionate about LeetCode.
           </p>
           <div className=" w-3/4 sm:w-2/5 md:w-1/3 lg:w-5/12 xl:w-1/3 2xl:w-1/4 mx-auto my-7">
             <a href="/Resume.pdf" download={"Resume.pdf"}>
@@ -124,6 +124,7 @@ const page = async () => {
         <div className=" ms-5 sm:ms-16 my-10">
           {data.educationData.map((items) => (
             <AboutList
+              key={items.date}
               date={items.date}
               title={items.title}
               location={items.location}
@@ -141,6 +142,7 @@ const page = async () => {
         <div className=" ms-5 sm:ms-16 my-10">
           {data.experienceData.map((items) => (
             <AboutList
+              key={items.date}
               date={items.date}
               title={items.title}
               location={items.location}

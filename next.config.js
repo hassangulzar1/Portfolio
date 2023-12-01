@@ -2,6 +2,10 @@
 
 module.exports = {
   images: {
-    domains: ["images.ctfassets.net"],
+    remotePatterns: [
+      {
+        hostname: "images.ctfassets.net",
+      },
+    ],
   },
 };

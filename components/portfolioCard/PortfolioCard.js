@@ -13,14 +13,12 @@ export default function PortfolioCard(props) {
         <div
           className={`${classes["rounded-lg"]} ${classes["container-project"]}`}
         >
-          {props.imagePath && (
-            <Image
-              src={"https://" + props.imagePath}
-              alt="Picture of the Project"
-              width={500}
-              height={500}
-            />
-          )}
+          <Image
+            src={"https://" + props.imagePath}
+            alt="Picture of the Project"
+            width={500}
+            height={500}
+          />
         </div>
         <div className={classes["project-info"]}>
           <div className={classes["flex-pr"]}>

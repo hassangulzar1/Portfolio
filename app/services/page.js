@@ -35,6 +35,7 @@ export default async function page() {
       <div className="container mx-auto flex justify-center my-10 flex-wrap">
         {services.map((items) => (
           <ServiceCard
+            key={items.title}
             iconName={items.iconName}
             title={items.title}
             desciption={items.description}

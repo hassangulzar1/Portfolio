@@ -9,6 +9,7 @@ export default function ServiceCard({
   desciption,
   iconBackground,
   iconColor,
+  key,
 }) {
   let icon;
 
@@ -31,6 +32,7 @@ export default function ServiceCard({
 
   return (
     <div
+      key={key}
       className={
         `flex flex-col my-4 px-10 py-10 text-center gap-6 ` + classes.hover
       }

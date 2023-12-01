@@ -8,7 +8,7 @@ export const AboutList = (props) => {
       <div
         className={`${classes.svgIcon} w-40 h-14 sm:h-20 lg:w-28 lg:h-16 xl:w-20`}
       >
-        <Image src={aimPic} />
+        <Image src={aimPic} alt="About List Icon" />
       </div>
 
       <div className=" sm:me-10">

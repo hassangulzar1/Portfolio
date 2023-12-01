@@ -1,6 +1,7 @@
 import classes from "./PortfolioCard.module.css";
 import Image from "next/image";
 import CSSTransition from "react-transition-group/CSSTransition";
+
 export default function PortfolioCard(props) {
   return (
     <CSSTransition in={props.inProp} classNames="fade" timeout={300}>
@@ -18,6 +19,7 @@ export default function PortfolioCard(props) {
             alt="Picture of the Project"
             width={500}
             height={500}
+            priority
           />
         </div>
         <div className={classes["project-info"]}>

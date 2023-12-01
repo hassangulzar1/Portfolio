@@ -1,11 +1,3 @@
-.svgIcon {
-  background-color: #4691f6;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-}
-
 .svg-icon {
   width: 3rem;
   height: 3rem;

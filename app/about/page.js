@@ -129,9 +129,7 @@ const page = async () => {
             />
           ))}
         </div>
-      </div>
-      {/* About my Education  */}
-      <div className="container mx-auto my-10">
+        {/* About my Education  */}
         <h1
           className=" text-7xl font-bold ms-3 sm:ms-0"
           style={{ fontFamily: "var(--font-poppins)", color: "#130F49" }}

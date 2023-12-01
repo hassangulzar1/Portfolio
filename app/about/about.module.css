@@ -1,6 +1,6 @@
 .bg {
   background-image: url("../../assets/bg.jpg");
-  height: 210vh;
+  height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -8,6 +8,11 @@
   align-items: center;
 }
 
+@media only screen and (max-width: 640px) {
+  .bg {
+    height: 210vh;
+  }
+}
 .bg h1 {
   text-align: center;
   margin-top: 3.4rem;

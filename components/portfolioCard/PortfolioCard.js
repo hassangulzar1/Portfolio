@@ -3,6 +3,10 @@ import Image from "next/image";
 import CSSTransition from "react-transition-group/CSSTransition";
 
 export default function PortfolioCard(props) {
+  const contentfulImageLoader = ({ src, width }) => {
+    return `${src}?w=${width}`;
+  };
+
   return (
     <CSSTransition in={props.inProp} classNames="fade" timeout={300}>
       <a
@@ -15,11 +19,11 @@ export default function PortfolioCard(props) {
           className={`${classes["rounded-lg"]} ${classes["container-project"]}`}
         >
           <Image
+            loader={contentfulImageLoader}
             src={"https://" + props.imagePath}
             alt="Picture of the Project"
             width={500}
             height={500}
-            priority
           />
         </div>
         <div className={classes["project-info"]}>

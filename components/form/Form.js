@@ -5,7 +5,7 @@ import emailjs from "emailjs-com";
 import { toast } from "react-toastify";
 const initialState = {
   name: "",
-  email: "",
+  UserEmail: "",
   subject: "",
   message: "",
 };
@@ -16,6 +16,7 @@ export default function Form() {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
+  console.log(formData);
   const submitHandler = (e) => {
     e.preventDefault();
     setloading(true);
@@ -56,9 +57,9 @@ export default function Form() {
         className={classes.input}
       />
       <input
-        value={formData.email}
+        value={formData.UserEmail}
         onChange={handleInputChange}
-        name="email"
+        name="UserEmail"
         type="text"
         required
         placeholder="Email"

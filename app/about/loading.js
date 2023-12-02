@@ -5,7 +5,7 @@ import classes from "./about.module.css";
 export default function Loading() {
   // You can add any UI inside Loading, including a Skeleton.
   return (
-    <>
+    <div style={{ marginBottom: "300px" }}>
       <DownNavbar title="About Me" />
       {/* About my Self Box  */}
       <div className={classes.bg}>
@@ -96,6 +96,6 @@ export default function Loading() {
           Education
         </h1>
       </div>
-    </>
+    </div>
   );
 }

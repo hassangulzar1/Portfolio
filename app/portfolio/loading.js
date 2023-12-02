@@ -3,7 +3,7 @@ import DownNavbar from "@/components/downNavbar/DownNavbar";
 import classes from "./Portfolio.module.css";
 export default function loading() {
   return (
-    <>
+    <div style={{ marginBottom: "300px" }}>
       <DownNavbar title="Portfolio" />
       <div className={classes.mainDiv}>
         <div className={`container sm:mx-auto mt-40 mx-3 `}>
@@ -21,6 +21,6 @@ export default function loading() {
           </h1>
         </div>
       </div>
-    </>
+    </div>
   );
 }

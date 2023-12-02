@@ -22,7 +22,7 @@ export default async function page() {
   const Projects = await fetchProjects();
 
   return (
-    <>
+    <div style={{ marginBottom: "400px" }}>
       <DownNavbar title="Portfolio" />
       <div className={classes.mainDiv}>
         <div className={`container sm:mx-auto mt-40 mx-3 `}>
@@ -41,6 +41,6 @@ export default async function page() {
           <Portolios Projects={Projects} />
         </div>
       </div>
-    </>
+    </div>
   );
 }

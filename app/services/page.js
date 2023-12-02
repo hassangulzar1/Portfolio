@@ -20,7 +20,7 @@ export default async function page() {
   services.reverse();
 
   return (
-    <div>
+    <div style={{ marginBottom: "300px" }}>
       <DownNavbar title="Services" />
       {/* <!-- ADVERTISERS SERVICE CARD --> */}
       <h1

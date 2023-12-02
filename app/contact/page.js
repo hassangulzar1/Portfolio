@@ -10,7 +10,7 @@ import SocialMedia from "@/components/socialmedia/SocialMedia";
 import { ToastContainer } from "react-toastify";
 export default function page() {
   return (
-    <>
+    <div style={{ marginBottom: "300px" }}>
       <ToastContainer />
       <DownNavbar title="Contact Me" />
       <div className="container mx-auto my-20 ">
@@ -66,6 +66,6 @@ export default function page() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }

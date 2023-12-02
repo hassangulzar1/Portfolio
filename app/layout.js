@@ -1,4 +1,5 @@
 import Navbar from "@/components/Navbar/Navbar";
+import Footer from "@/components/footer/Footer";
 import "./globals.css";
 import "react-toastify/dist/ReactToastify.css";
 import "leaflet/dist/leaflet.css";
@@ -29,6 +30,7 @@ export default function RootLayout({ children }) {
       <body className={`${karla.variable} ${poppins.variable}`}>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

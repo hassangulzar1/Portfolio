@@ -34,7 +34,7 @@ const page = async () => {
   const data = await fetchEducation();
 
   return (
-    <>
+    <div style={{ marginBottom: "300px" }}>
       <DownNavbar title="About Me" />
       {/* About my Self Box  */}
       <div className={classes.bg}>
@@ -151,7 +151,7 @@ const page = async () => {
           ))}
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

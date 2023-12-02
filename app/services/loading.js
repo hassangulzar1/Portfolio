@@ -2,7 +2,7 @@ import React from "react";
 import DownNavbar from "@/components/downNavbar/DownNavbar";
 export default function loading() {
   return (
-    <>
+    <div style={{ marginBottom: "300px" }}>
       <DownNavbar title="Services" />
       {/* <!-- ADVERTISERS SERVICE CARD --> */}
       <h1
@@ -20,6 +20,6 @@ export default function loading() {
       >
         Loading..
       </p>
-    </>
+    </div>
   );
 }

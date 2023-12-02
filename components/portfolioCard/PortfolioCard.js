@@ -8,9 +8,13 @@ export default function PortfolioCard(props) {
   };
 
   return (
-    <CSSTransition in={props.inProp} classNames="fade" timeout={300}>
+    <CSSTransition
+      in={props.inProp}
+      classNames="fade"
+      timeout={300}
+      key={props.key}
+    >
       <a
-        key={props.id}
         href={props.link}
         target="_black"
         className={classes["article-wrapper"]}
@@ -40,10 +44,10 @@ export default function PortfolioCard(props) {
                 width="2em"
                 height="2em"
                 color="black"
-                stroke-linejoin="round"
-                stroke-linecap="round"
+                strokeWidth="2"
+                strokeLinejoin="round"
+                strokeLinecap="round"
                 viewBox="0 0 24 24"
-                stroke-width="2"
                 fill="none"
                 stroke="currentColor"
               >

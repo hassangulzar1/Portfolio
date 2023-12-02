@@ -1,7 +1,6 @@
 import Image from "next/image";
 import heroImg from "../assets/homeImg.png";
 import classes from "./home.module.css";
-import SocialMedia from "@/components/socialmedia/SocialMedia";
 import AutoType from "@/components/autotyping/AutoType";
 import MainPageBtn from "@/components/mainPageButtons/MainPageBtn";
 export default function Home() {

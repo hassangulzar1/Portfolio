@@ -21,9 +21,6 @@ export default function Home() {
           <div className="flex gap-5 my-5 z-0">
             <MainPageBtn />
           </div>
-          <div className=" my-10">
-            <SocialMedia />
-          </div>
         </div>
         <div className="sm:w-1/2 my-auto inline-block">
           <Image

@@ -3,6 +3,7 @@
   position: sticky;
   top: 0;
   border-bottom: 1px solid black;
+  z-index: 1100;
 }
 .nav {
   height: 60px;

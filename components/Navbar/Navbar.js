@@ -9,7 +9,7 @@ const Navbar = () => {
   const [showDropdown, setshowDropdown] = useState(false);
 
   return (
-    <nav className={`${classes.navBackground} z-10`}>
+    <nav className={`${classes.navBackground}`}>
       <div className={classes.nav}>
         <input
           type="checkbox"

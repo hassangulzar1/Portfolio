@@ -40,7 +40,7 @@
 .menu li a {
   font-size: 1.2rem;
   color: #fff;
-  margin: 0 10px;
+  margin: 5px 10px;
   display: inline-block;
   text-decoration: none;
   font-family: var(--font-poppins);
@@ -82,6 +82,7 @@
   bottom: 10px;
   animation: animationWave_02 4s linear infinite;
 }
+
 .wave3 {
   z-index: 1000;
   opacity: 0.2;

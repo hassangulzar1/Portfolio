@@ -16,22 +16,28 @@ export default function Footer() {
       </div>
       <ul className={classes["social_icon"]}>
         <li>
-          <a href="/">
+          <a
+            href="https://www.linkedin.com/in/hassan-gulzar-256292267/"
+            target="_blank"
+          >
             <FaLinkedin />
           </a>
         </li>
         <li>
-          <a href="">
+          <a href="https://github.com/hassangulzar1" target="_blank">
             <FaGithub />
           </a>
         </li>
         <li>
-          <a href="">
+          <a href="https://www.instagram.com/shkhassan14/" target="_blank">
             <AiFillInstagram />
           </a>
         </li>
         <li>
-          <a href="">
+          <a
+            href="https://www.facebook.com/hassan.gulzar.56614/"
+            target="_blank"
+          >
             <FaFacebook />
           </a>
         </li>

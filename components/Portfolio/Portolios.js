@@ -23,36 +23,59 @@ export default function Portolios({ Projects }) {
   });
   return (
     <>
-      <div className={"ms-5 mt-6 flex gap-7 sm:gap-10 " + classes.worksDiv}>
+      <div
+        className={
+          "ms-5 mt-6 flex flex-wrap gap-3 sm:gap-5 md:gap-7 lg:gap-10 " +
+          classes.worksDiv
+        }
+      >
         <li
           id="all"
-          className={`text-xl ${filterBy == "all" && classes.active}`}
+          className={`text-base sm:text-lg md:text-xl ${
+            filterBy == "all" && classes.active
+          }`}
           onClick={targetValue}
         >
           All
         </li>
         <li
           id="design"
-          className={`text-xl ${filterBy == "design" && classes.active}`}
+          className={`text-base sm:text-lg md:text-xl ${
+            filterBy == "design" && classes.active
+          }`}
           onClick={targetValue}
         >
           Web Designs
         </li>
         <li
           id="frontend"
-          className={`text-xl ${filterBy == "frontend" && classes.active}`}
+          className={`text-base sm:text-lg md:text-xl ${
+            filterBy == "frontend" && classes.active
+          }`}
           onClick={targetValue}
         >
           Front-End
         </li>
         <li
           id="fullstack"
-          className={`text-xl ${filterBy == "fullstack" && classes.active}`}
+          className={`text-base sm:text-lg md:text-xl ${
+            filterBy == "fullstack" && classes.active
+          }`}
           onClick={targetValue}
         >
           Full-Stack
         </li>
+        <li
+          id="hackathon"
+          className={`text-base sm:text-lg md:text-xl ${
+            filterBy == "hackathon" && classes.active
+          }`}
+          onClick={targetValue}
+        >
+          Hackathon's Projects
+        </li>
       </div>
+
       <div className="my-20 mx-10 flex flex-wrap gap-24 justify-center">
         {filteredArray.map((items, i) => (
           <PortfolioCard
